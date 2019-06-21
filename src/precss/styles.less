@@ -120,6 +120,13 @@ img{
 					&:nth-child(5){
 						margin-right: 90px;
 					}
+					&_a{
+						text-decoration: none;
+						font-family: Futura Bk BT;
+						font-size: 12px;
+						line-height: 14px;
+						color: #000000;
+					}
 					&_youtube{
 						align-self: center;
 						text-decoration: none;
@@ -275,19 +282,13 @@ img{
 					content:'';
 					position:absolute;
 					left: -600px;
-					bottom: 0;
+					bottom: -80px;
 					right: -120px;
 					top: 59%;
 					background-color:white;
 					padding-bottom:125px;	
 				}			
 			}
-
-				
-					
-			
-			
-
 		}
 	}
 }
@@ -330,5 +331,126 @@ img{
 
 		}
 
+	}
+}
+.news{
+	&__h{
+		font-size: 58px;
+		line-height: 70px;
+		text-align: center;
+		margin: 19px;
+	}
+	&__p{
+		font-family: Futura;
+		font-size: 14px;
+		line-height: 17px;
+		text-align: center;
+		width: 266px;
+		margin: 0 auto;
+		margin-bottom: 34px;
+	}
+
+	&-article{
+		margin-bottom: 40px;
+
+		&__blockLeft{
+			.col();
+			.size(6);
+
+			&_data{
+				color: #999999;
+				font-size: 14px;
+				line-height: 17px;
+			}
+			&_p{
+				font-size: 24px;
+				line-height: 29px;
+				max-width: 590px;
+				color: #000000;
+				font-weight: bold;
+			}
+		}
+
+		&__blockRight{
+			.col();
+			.size(6);
+			.section-one{
+				margin-bottom: 21px;
+
+					.news-article__img{
+						width: 50%;
+						margin-right: 20px;
+					}
+					.news-article__figure{
+						display:inline-block;
+						width: 45%;
+						
+						&_time{
+
+						
+						}
+						&_h{
+							font-size: 18px;
+							line-height: 22px;
+							font-weight: bold;
+							margin-bottom: 20px;
+						}
+						&_p{
+							font-size: 14px;
+							line-height: 17px;
+							color: #555555;
+
+						}
+					}
+
+			}
+			.section-two{
+
+				.news-article__img{
+					width: 50%;
+					margin-right: 20px;
+				}
+				.news-article__figure{
+					display:inline-block;
+					width: 45%;
+					
+						&_time{
+
+							
+						}
+						&_h{
+							font-size: 18px;
+							line-height: 22px;
+							color: #000000;
+							font-weight: bold;
+							margin-bottom: 20px;
+						}
+						&_p{
+							font-size: 14px;
+							line-height: 17px;
+							color: #555555;
+
+						}
+					}
+			}
+
+		}		
+	}
+	&-all{
+		display:inline-block;
+		width: 100%;
+		text-align: right;
+		margin-bottom: 103px;
+	}
+}
+.footer{
+	border-top: 1px solid #E0E1EA;
+	&__p{
+		margin-top: 26px;
+		margin-bottom: 23px;
+		text-align: center;
+		font-family: Futura Bk BT;
+		font-size: 14px;
+		line-height: 17px;
 	}
 }

@@ -40,11 +40,16 @@
               <img src="./img/svg/logo.svg" alt="logo" class="nav-logo__img">
             </a>
             <ul class="nav-menu">
-              <li class="nav-menu__li">ROBOTS</li>
-              <li class="nav-menu__li">JOBS</li>
-              <li class="nav-menu__li">NEWS</li>
-              <li class="nav-menu__li">ABOUT</li>
-              <li class="nav-menu__li">CONTACT</li>
+              <li class="nav-menu__li">
+                <a href="#robots" class="nav-menu__li_a">ROBOTS</a></li>
+              <li class="nav-menu__li">
+                <a href="" class="nav-menu__li_a">JOBS</a></li>
+              <li class="nav-menu__li">
+                <a href="" class="nav-menu__li_a">NEWS</a></li>
+              <li class="nav-menu__li">
+                <a href="" class="nav-menu__li_a">ABOUT</a></li>
+              <li class="nav-menu__li">
+                <a href="" class="nav-menu__li_a">CONTACT</a></li>
               <li class="nav-menu__li">
                 <a href="#" class="nav-menu__li_youtube">YouTube</a>
               </li>
@@ -85,16 +90,16 @@
                 <a href="#" class="slogan-discription__btn"> See the lineup </a>
                 <div class="slogan-discription__link">
                   <a href="#" class="slogan-discription__link_a">
-                    <img src="./img/HD-01 Front 2.jpg" alt="">
+                    <img src="./img/HD-01 Front 2.jpg" alt="robot">
                   </a>
                   <a href="#" class="slogan-discription__link_a">
-                    <img src="./img/HD-01 Front 2.1.jpg" alt="">
+                    <img src="./img/HD-01 Front 2.1.jpg" alt="robot">
                   </a>
                   <a href="#" class="slogan-discription__link_a">
-                    <img src="./img/HD-01 Front 2.2.jpg" alt="">
+                    <img src="./img/HD-01 Front 2.2.jpg" alt="robot">
                   </a>
                   <a href="#" class="slogan-discription__link_a">
-                    <img src="./img/HD-01 Front 2.3.jpg" alt="">
+                    <img src="./img/HD-01 Front 2.3.jpg" alt="robot">
                   </a>
                 </div>
                 <p class="slogan-discription__p"> BostonDynamics </p>
@@ -105,7 +110,7 @@
         </body>
       </html>
       <section class="our-robots wrapper">
-        <h2 class="our-robots__h"> Our robots </h2>
+        <h2 id="robots" class="our-robots__h"> Our robots </h2>
         <ul class="our-robots__ul row">
           <li class="our-robots__li">
             <figure class="our-robots__img">
@@ -145,7 +150,63 @@
           </li>
         </ul>
       </section>
+      <section class="news wrapper">
+        <h2 class="news__h">News</h2>
+        <p class="news__p"> some media stories about us and the work we’ve been doing </p>
+        <article class="news-article row">
+          <figure class="news-article__blockLeft">
+            <img src="./img/BlockLeft.jpg" alt="news">
+            <figcaption class="news-article__blockLeft_data">
+              <time datetime="2019-02-04">04/02/2019 | Press Release </time>
+              <p class="news-article__blockLeft_p"> Boston Dynamics to showcase ‘PICK’ System at the 2019 PROMAT Show </p>
+            </figcaption>
+          </figure>
+          <figure class="news-article__blockRight">
+            <div class="section-one">
+              <img class="news-article__img" src="./img/BlockRight1.jpg" alt="News">
+              <figcaption class="news-article__figure">
+                <time class="news-article__figure_time" datetime="2019-02-04"> 04/02/2019 | Press Release </time>
+                <h3 class="news-article__figure_h"> Boston Dynamics’ New Rolling, Leaping Robot Is an Evolutionary Marvel </h3>
+                <p class="news-article__figure_p"> Handle isn’t just a startling reminder that highly sophisticated robots are here and stealing jobs, but that humans can create... </p>
+              </figcaption>
+            </div>
+            <div class="section-two">
+              <img class="news-article__img" src="../img/BlockRight2.jpg" alt="News">
+              <figcaption class="news-article__figure">
+                <time class="news-article__figure_time" datetime="2019-02-04"> 04/02/2019 | Press Release </time>
+                <h3 class="news-article__figure_h"> Boston Dynamics’ New Rolling, Leaping Robot Is an Evolutionary Marvel </h3>
+                <p class="news-article__figure_p"> Handle isn’t just a startling reminder that highly sophisticated robots are here and stealing jobs, but that humans can create... </p>
+              </figcaption>
+            </div>
+          </figure>
+        </article>
+        <a href="#" class="news-all">all news</a>
+      </section>
     </main>
+    <!DOCTYPE html>
+    <html lang="ru">
+      <head>
+        <meta charset="UTF-8">
+        <meta http-equiv='X-UA-Compatible' content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <link rel="shortcut icon" href="favicon.png">
+        <title> Document </title>
+        <link rel="stylesheet" href="./css/styles.css">
+        <!-- HTML5 shim and Respond.js-->
+        <!-- [if lt IE 9]>
+		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+	<! [endif]-->
+      </head>
+      <body>
+        <footer class="footer">
+          <p class="footer__p"> © 2019 Boston Dynamics </p>
+        </footer>
+        <script src="./js/js.js"></script>
+      </body>
+    </html>
     <script src="./js/js.js"></script>
   </body>
 </html>

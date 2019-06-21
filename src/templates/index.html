@@ -22,7 +22,7 @@
 <main>
 	{% include '_section.first-screen.html' %}
 	<section class="our-robots wrapper">
-		<h2 class="our-robots__h">
+		<h2 id="robots" class="our-robots__h">
 			Our robots
 		</h2>
 		<ul class="our-robots__ul row">
@@ -64,7 +64,58 @@
 			</li>
 		</ul>
 	</section>
+	<section class="news wrapper">
+		<h2 class="news__h">News</h2>
+		<p class="news__p">
+			some media stories about us and the work we’ve been doing
+		</p>
+		<article class="news-article row">
+			<figure class="news-article__blockLeft">
+			  <img src="./img/BlockLeft.jpg" alt="news">
+			  <figcaption class="news-article__blockLeft_data">
+			  	<time datetime="2019-02-04">04/02/2019 | Press Release
+			  	</time>
+			  	<p class="news-article__blockLeft_p">
+			  		Boston Dynamics to showcase ‘PICK’ System at the 2019 PROMAT Show
+			  	</p>
+			  </figcaption>
+			</figure>
+			<figure class="news-article__blockRight">
+				<div class="section-one">
+					<img  class="news-article__img" src="./img/BlockRight1.jpg" alt="News">
+					<figcaption class="news-article__figure">
+				  	<time class="news-article__figure_time" datetime="2019-02-04">
+				  		04/02/2019 | Press Release
+				  	</time>
+				  	<h3 class="news-article__figure_h">
+				  		Boston Dynamics’ New Rolling, Leaping Robot Is an Evolutionary Marvel
+				  	</h3>
+				  	<p class="news-article__figure_p"> 
+				  		Handle isn’t just a startling reminder that highly sophisticated robots are here and stealing jobs, but that humans can create...
+				  	</p>
+				  </figcaption>
+			  </div>
+			  <div class="section-two">
+			  	<img  class="news-article__img" src="../img/BlockRight2.jpg" alt="News">
+					<figcaption class="news-article__figure">
+				  	<time class="news-article__figure_time" datetime="2019-02-04">
+				  		04/02/2019 | Press Release
+				  	</time>
+				  	<h3 class="news-article__figure_h">
+				  		Boston Dynamics’ New Rolling, Leaping Robot Is an Evolutionary Marvel
+				  	</h3>
+				  	<p class="news-article__figure_p"> 
+				  		Handle isn’t just a startling reminder that highly sophisticated robots are here and stealing jobs, but that humans can create...
+				  	</p>
+				  </figcaption>
+			  	
+			  </div>
+			</figure>
+		</article>
+		<a href="#" class="news-all">all news</a>
+	</section>
 </main>
+	{% include '_footer.html' %}
 
 <script src="./js/js.js"></script>
 </body>
