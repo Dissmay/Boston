@@ -20,6 +20,9 @@
 <body>
 	{% include '_header.html' %}
 <main>
+
+	
+	{% set img = '../img/svg/HD-01 Front.svg' %}
 	{% include '_section.first-screen.html' %}
 	<section class="our-robots wrapper">
 		<h2 id="robots" class="our-robots__h">
@@ -36,7 +39,7 @@
 				</figure>
 			</li>
 			<li class="our-robots__li">
-				<figure class="our-robots__figure">
+				<figure class="our-robots__img">
 					<img src="./img/HD-01 Front1.jpg" alt="" class="our-robots__img">
 					<figcaption class="our-robots__figcaption">
 						<h3 class="our-robots__figcaption_h">Handle</h3>
@@ -71,7 +74,7 @@
 		</p>
 		<article class="news-article row">
 			<figure class="news-article__blockLeft">
-			  <img src="./img/BlockLeft.jpg" alt="news">
+			  <img class="news-article__blockLeft_img" src="./img/BlockLeft.jpg" alt="news">
 			  <figcaption class="news-article__blockLeft_data">
 			  	<time datetime="2019-02-04">04/02/2019 | Press Release
 			  	</time>
