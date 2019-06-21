@@ -141,12 +141,16 @@ img{
 }
 .first-screen{
 	height: 100vh;
+	margin-bottom: 95px;
+
 	&:before{
 		content: '';
 		position:absolute;
 		z-index: -3;
-		width: 295px;
-		height: 100%;
+		top: 0;
+		left: 0;
+		bottom: 4.5%;
+		right:79%;
 		background: rgba(60, 193, 224, 0.6);
 	}
 
@@ -161,6 +165,7 @@ img{
 			height: 491px;
 			margin-left: -46px;
 			position:relative;
+			z-index:5;
 			&:before{
 				content:'';
 				position:absolute;
@@ -182,17 +187,44 @@ img{
 				top: -49px;
 				left: 42%;
 				background-image: url('../img/svg/Ellipse3.svg');
-
-
-
 			}
 			&_front{
 				margin-top: -120px;
 				margin-left: 23px;
-
 			}
-
+			&_btn{
+				position:absolute;
+				top: 0;
+				right:50px;
+				width: 45px;
+				height: 45px;
+				z-index:30;
+				cursor:pointer;
+				border-radius: 50%;
+				background-color: #FFFFFF;
+				transition: 0.5s;
+				
+				box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.25);
+				
+					&:before{
+						content:'';
+						position:absolute;
+						background-image:url('../img/svg/Polygon.svg');
+						background-repeat:no-repeat;
+						transform: translate(-50%, -50%);
+						top: 50%;
+						left: 55%;
+						width: 17px;
+						height: 17px;
+					}
+				&:hover{
+						transform: scale(1.2);
+					}
+				
+			}
 		}
+
+
 		&-discription{
 			.size(6);
 			&__text{
@@ -216,18 +248,87 @@ img{
 				background-color: #000000;
 				display:inline-block;
 				margin-bottom: 121px;
+
 			}
 			&__link{
-
-
 				&_a{
 					text-decoration:none;
 					margin-right: 5px;
 					display:inline-block;
-
 				}
 			}
+			&__p{
+				margin-top: 10px;
+				margin-left: -459px;
+				font-family: Roboto;		
+				font-style: normal;
+				font-weight: normal;
+				font-size: 145px;
+				line-height: 170px;
+				position:relative;
+				z-index:-3;	
+				color: #E5E5E5;
+			
+
+
+				&:before{
+					content:'';
+					position:absolute;
+					left: -600px;
+					bottom: 0;
+					right: -120px;
+					top: 59%;
+					background-color:white;
+					padding-bottom:125px;	
+				}			
+			}
+
+				
+					
+			
+			
 
 		}
+	}
+}
+.our-robots{
+	&__h{
+		text-align:center;
+		font-size: 58px;
+		line-height: 70px;
+		color: #000000;
+		margin-bottom: 100px;
+
+	}
+	&__ul{
+		justify-content:flex-end;
+		padding-bottom: 121px;
+
+	}
+	&__li{
+		list-style:none;
+		.col();
+		.size(3);
+		.size-sm(6);
+
+
+	}
+	&__img{
+		margin-bottom: 26px;
+
+	}
+	&__figcaption{
+		text-align:center;
+		&_h{
+			font-size: 30px;
+			line-height: 36px;
+			margin-bottom: 15px;
+		}
+		&_p{
+			font-size: 12px;
+			line-height: 12px
+
+		}
+
 	}
 }
