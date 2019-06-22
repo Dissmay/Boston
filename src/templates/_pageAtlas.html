@@ -18,21 +18,11 @@
 
 </head>
 <body>
-	<section class="first-screen">
-		<div class="slogan wrapper">
-			<div class="slogan__img slogan__img{{color}}">
-				<img src="{{ img }}" alt="robot" class="slogan__img_front">
-				<button class="slogan__img_btn">
-					
-				</button>
-				
-			</div>
-			{% include '_sloganDiscription.html' %}
-		</div>
-	</section>
-	
-
-
+{% include '_header.html' %}
+{% set img = '../img/svg/HD-01 Front.svg' %}
+{% include '_section.first-screen.html' %}
+{% include '_footer.html' %}
+<script src="./js/jquery.min.js"  ></script>
 <script src="./js/js.js"></script>
 </body>
 </html>

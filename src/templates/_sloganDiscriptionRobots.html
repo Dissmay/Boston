@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv='X-UA-Compatible' content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<link rel="shortcut icon" href="favicon.png">
+	<title> Document </title>
+	<link rel="stylesheet" href="./css/styles.css">
+
+	<!-- HTML5 shim and Respond.js-->
+	<!-- [if lt IE 9]>
+		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+	<! [endif]-->	
+
+</head>
+<body>
+<div class="slogan-discription">
+	<h1 class="slogan-discription__text ">
+		{{H1}}
+	</h1>
+	<h2 class="slogan-discription__h">
+		{{H2}}
+	</h2>
+	<div class="row">
+	<p class="slogan-discription__specification">
+		{{pblock1}} 
+	</p>
+	<p class="slogan-discription__specification">
+		{{pblock2}}  
+	</p>
+	</div>
+	<div class="slogan-discription__link">
+		<p class="slogan-discription__link_p">
+			More photos of Atlas
+		</p>
+		<a href="#" class="slogan-discription__link_a">
+			<img src="{{ photo.img1 }}" alt="robot">
+		</a>
+		<a href="#" class="slogan-discription__link_a">
+			<img src="{{ photo.img2 }}" alt="robot">
+		</a>
+		<a href="#" class="slogan-discription__link_a">
+			<img src="{{ photo.img3 }}" alt="robot">
+		</a>
+		<a href="#" class="slogan-discription__link_a">
+			<img src="{{ photo.img4 }}" alt="robot">
+		</a>
+	</div>
+	<p class="slogan-discription__p">
+		BostonDynamics
+	</p>
+</div>
+<script src="./js/js.js"></script>
+</body>
+</html>

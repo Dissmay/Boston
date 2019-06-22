@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv='X-UA-Compatible' content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<link rel="shortcut icon" href="favicon.png">
+	<title> Document </title>
+	<link rel="stylesheet" href="./css/styles.css">
+
+	<!-- HTML5 shim and Respond.js-->
+	<!-- [if lt IE 9]>
+		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+	<! [endif]-->	
+
+</head>
+<body>
+	<section class="first-screen">
+		<div class="slogan wrapper">
+			<div class="slogan__img slogan__img{{_color}}">
+				<img src="{{ img }}" alt="robot" class="slogan__img_front">
+				<button class="slogan__img_btn">	
+				</button>
+			</div>
+			{% include '_sloganDiscriptionRobots.html' %}
+		</div>
+	</section>
+	<section class="about wrapper">
+		<h2 class="about__h">
+			About {{characteristic.name}}
+		</h2>
+		<div class="row">
+		<div class="about__text">
+			<p class="about__text_p">
+				{{characteristic.text}}
+			</p>
+			<p class="about__text_p">
+				{{characteristic.text2}}
+			</p>
+		</div>
+		<div class="about-characteristic">
+			<ul class="about-characteristic__ul">
+					<li class="about-characteristic__li">
+					Height <span 
+					class="about-characteristic__li_span" >_____________________________
+					</span>{{characteristic.height}}
+				</li>
+					<li class="about-characteristic__li">
+					Weight <span 
+					class="about-characteristic__li_span" >_____________________________
+					</span>{{characteristic.weight}}
+				</li>
+					<li class="about-characteristic__li">
+					Payload <span 
+					class="about-characteristic__li_span" >____________________________
+					</span>{{characteristic.payload}}
+				</li>
+					<li class="about-characteristic__li">
+					Power <span 
+					class="about-characteristic__li_span" >______________________________
+					</span>{{characteristic.power}}
+				</li>
+					<li class="about-characteristic__li">
+					Actuation <span 
+					class="about-characteristic__li_span" >___________________________
+					</span>{{characteristic.acuation}}
+				</li>
+					<li class="about-characteristic__li">
+					Perception <span 
+					class="about-characteristic__li_span" >__________________________
+					</span>{{characteristic.perception}}
+				</li>
+					<li class="about-characteristic__li">
+					Joints <span 
+					class="about-characteristic__li_span" >______________________________
+					</span>{{characteristic.joints}}
+				</li>
+			</ul>
+		</div>
+		</div>
+	</section>
+	<section class="watch-video wrapper">
+		<h2 class="watch-video__h">
+			Watch video with {{name}}
+		</h2>
+		<div class="row">
+			<figure class="watch-video__leftBlock">
+				<div class="watch-video__leftBlock_height">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/fRj34o4hN4I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+				
+			</figure>
+			<div class="watch-video__rightBlock">
+				<figure class="watch-video__rightBlock_video1">
+					<div class="watch-video__rightBlock_video1-height">
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/fRj34o4hN4I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</div>
+					
+				</figure>
+				<figure class="watch-video__rightBlock_video2">
+					<div class="watch-video__rightBlock_video2-height">
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/fRj34o4hN4I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</div>
+
+				</figure>
+				
+			</div>
+		</div>
+		
+	</section>
+	
+
+
+<script src="./js/js.js"></script>
+</body>
+</html>

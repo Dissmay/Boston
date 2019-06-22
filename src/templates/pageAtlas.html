@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv='X-UA-Compatible' content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<link rel="shortcut icon" href="favicon.png">
+	<title> Document </title>
+	<link rel="stylesheet" href="./css/styles.css">
+
+	<!-- HTML5 shim and Respond.js-->
+	<!-- [if lt IE 9]>
+		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+	<! [endif]-->	
+
+</head>
+<body>
+{% include '_header.html' %}
+<main>
+{% set img = '../img/svg/HD-01 Front.svg' %}
+{% set H1 = 'Atlas' %}
+{% set H2 = 'The Worlds Most Dynamic Humanoid' %}
+{% set pblock1 = 'Atlas uses balance and whole-body skills to achieve 		two-handed mobile manipulation.
+	Atlas is the latest in a line of advanced humanoid robots we are developing.' %}
+{% set pblock2 = 'Atlas control system coordinates motions of the arms, 	torso and legs to achieve whole-body mobile manipulation, greatly 		expanding its reach and workspace.' %}
+
+{% set photo = {
+		img1:'../img/HD-01 Front 2.jpg',
+		img2:'../img/HD-01 Atlas 2.1.jpg',
+		img3:'../img/HD-01 Atlas 2.2.jpg',
+		img4:'../img/HD-01 Atlas 2.3.jpg'
+	} 
+%}
+
+{% set characteristic = {
+			name: 'Atlas',
+			text:
+			 	'Atlas is the latest in a line of advanced humanoid robots we are developing. Atlas control system coordinates motions of the arms, torso and legs to achieve whole-body mobile manipulation, greatly expanding its reach and workspace.  Atlas ability to balance while performing tasks allows it to work in a large volume while occupying only a small footprint.',
+			text2:
+				'The Atlas hardware takes advantage of 3D printing to save weight and space, resulting in a remarkable compact robot with high strength-to-weight ratio and a dramatically large workspace. Stereo vision, range sensing and other sensors give Atlas the ability to manipulate objects in its environment and to travel on rough terrain. 
+				Atlas keeps its balance when jostled or pushed and can get up if it tips over.',
+			height:'1.5 m',
+			weight:'75 kg',
+			payload:'11 kg',
+			power:'Battery',
+			acuation:'Hydravlic',
+			perception:'3D Vision system',
+			joints:'28'
+
+		}
+%}
+
+{% include '_section.first-screenRobots.html' %}
+</main>
+{% include '_footer.html' %}
+<script src="./js/jquery.min.js"  ></script>
+<script src="./js/js.js"></script>
+</body>
+</html>
