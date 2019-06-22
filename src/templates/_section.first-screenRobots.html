@@ -42,43 +42,59 @@
 			</p>
 		</div>
 		<div class="about-characteristic">
-			<ul class="about-characteristic__ul">
-					<li class="about-characteristic__li">
-					Height <span 
-					class="about-characteristic__li_span" >_____________________________
-					</span>{{characteristic.height}}
-				</li>
-					<li class="about-characteristic__li">
-					Weight <span 
-					class="about-characteristic__li_span" >_____________________________
-					</span>{{characteristic.weight}}
-				</li>
-					<li class="about-characteristic__li">
-					Payload <span 
-					class="about-characteristic__li_span" >____________________________
-					</span>{{characteristic.payload}}
-				</li>
-					<li class="about-characteristic__li">
-					Power <span 
-					class="about-characteristic__li_span" >______________________________
-					</span>{{characteristic.power}}
-				</li>
-					<li class="about-characteristic__li">
-					Actuation <span 
-					class="about-characteristic__li_span" >___________________________
-					</span>{{characteristic.acuation}}
-				</li>
-					<li class="about-characteristic__li">
-					Perception <span 
-					class="about-characteristic__li_span" >__________________________
-					</span>{{characteristic.perception}}
-				</li>
-					<li class="about-characteristic__li">
-					Joints <span 
-					class="about-characteristic__li_span" >______________________________
-					</span>{{characteristic.joints}}
-				</li>
-			</ul>
+			<dl class="about-characteristic__dl">
+					<dt class="about-characteristic__dt">
+						<span>Height</span><span class="about-characteristic__dt_solid"></span>
+					</dt>
+					<dd>
+						{{characteristic.height}}
+					</dd>
+			</dl>
+			<dl class="about-characteristic__dl">
+				<dt class="about-characteristic__dt">
+					<span>Weight</span><span class="about-characteristic__dt_solid"></span>
+				</dt>
+				<dd class="about-characteristic__dd" >
+					{{characteristic.weight}}
+				</dd>
+			</dl>
+			<dl class="about-characteristic__dl">
+				<dt class="about-characteristic__dt">
+					<span>Payload</span><span class="about-characteristic__dt_solid"></span>
+				</dt>
+				<dd class="about-characteristic__dd" >
+					{{characteristic.payload}}
+				</dd></dl>
+			<dl class="about-characteristic__dl">
+				<dt class="about-characteristic__dt">
+					<span>Power</span><span class="about-characteristic__dt_solid"></span>
+				</dt>
+				<dd class="about-characteristic__dd" >
+					{{characteristic.power}}
+				</dd>
+			</dl>
+			<dl class="about-characteristic__dl">
+				<dt class="about-characteristic__dt">
+					<span>Actuation </span><span class="about-characteristic__dt_solid"></span>
+				</dt>
+				<dd class="about-characteristic__dd" >
+					{{characteristic.acuation}}
+				</dd>
+			</dl>
+				<dl class="about-characteristic__dl">
+					<dt class="about-characteristic__dt">
+					<span>Perception</span> <span class="about-characteristic__dt_solid"></span>
+				</dt>
+				<dd class=" about-characteristic__dd">
+					{{characteristic.perception}}
+				</dd>
+			</dl>
+				<dl class="about-characteristic__dl">
+					<dt class="about-characteristic__dt">
+					<span>Joints </span><span class="about-characteristic__dt_solid"></span>
+				</dt>
+				<dd class="about-characteristic__dd" >{{characteristic.joints}}</dd>
+			</dl>
 		</div>
 		</div>
 	</section>
@@ -89,20 +105,20 @@
 		<div class="row">
 			<figure class="watch-video__leftBlock">
 				<div class="watch-video__leftBlock_height">
-					<iframe width="560" height="315" src="https://www.youtube.com/embed/fRj34o4hN4I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					{{ video.video1 | safe }}
 				</div>
 				
 			</figure>
 			<div class="watch-video__rightBlock">
 				<figure class="watch-video__rightBlock_video1">
 					<div class="watch-video__rightBlock_video1-height">
-						<iframe width="560" height="315" src="https://www.youtube.com/embed/fRj34o4hN4I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						{{ video.video2 | safe }}
 					</div>
 					
 				</figure>
 				<figure class="watch-video__rightBlock_video2">
 					<div class="watch-video__rightBlock_video2-height">
-						<iframe width="560" height="315" src="https://www.youtube.com/embed/fRj34o4hN4I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						{{ video.video3 | safe }}
 					</div>
 
 				</figure>
