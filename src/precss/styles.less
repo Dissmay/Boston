@@ -1,6 +1,8 @@
 @import 'libs/smart-grid.less';
 @import 'libs/vars.less';
 @import 'libs/mixins.less';
+@import 'libs/slick.less';
+@import 'libs/slick-theme.less';
 @font-face{
 	font-family: "futura";
 	src: url("../fonts/futubk-webfont.woff");
@@ -496,6 +498,7 @@ img{
 
 			}
 			&__link{
+				
 				&_p{
 					margin-bottom: 3px;
 				}
@@ -503,6 +506,7 @@ img{
 					text-decoration:none;
 					margin-right: 5px;
 					display:inline-block;
+
 					.media(993px,{
 						.size(3);
 						text-align:center;
@@ -805,10 +809,13 @@ img{
 }
 .footer{
 	border-top: 1px solid #E0E1EA;
+	background-color:white;
+
 	&__p{
 		margin-top: 26px;
 		margin-bottom: 23px;
 		text-align: center;
+
 		font-family: Futura Bk BT;
 		font-size: 14px;
 		line-height: 17px;
@@ -977,3 +984,174 @@ img{
 		
 	}
 }
+
+/* Секция Jobs */
+.jobs{
+	margin-top: 181px;
+	position: relative;
+	.row{
+		margin-bottom: 150px;
+	}
+	&__h2{
+	.shift-left(0.9);
+	font-family: Futura Md BT;
+	font-size: 58px;
+	line-height: 70px;
+	color: #000000;
+	margin-bottom: 48px;
+	}
+	&-listings{
+		.col();
+		.size(5.2);
+		.shift-left(1);
+		.media(980px,{
+			.size(12);
+			.shift-left(0);
+			text-align:center;
+			});
+		&__h{
+			font-family: Futura Md BT;
+			font-size: 30px;
+			line-height: 36px;
+			color: #000000;
+			margin-bottom: 25px;
+		}
+		&__ul{
+			list-style:none;
+		}
+		&__li{
+
+			&_h{
+				font-family: Futura Md BT;
+				font-size: 18px;
+				line-height: 22px;
+				color: #000000;
+				margin-bottom: 7px;
+
+			}
+			&_p{
+				margin-bottom: 20px;
+
+			}
+		}
+	}
+	&-hiring{
+		.col();
+		.size(5);
+		.media(980px,{
+			.size(12);
+
+			});
+		&__h{
+			margin-bottom: 24px;
+			font-family: Futura Md BT;
+			font-size: 30px;
+			line-height: 36px;
+			color: #000000;
+		}
+		&__p{
+		width: 550px;
+		margin-bottom: 30px;
+		font-family: Futura Bk BT;
+		font-size: 14px;
+		line-height: 17px;
+		color: #000000;
+		.media(1182px,{
+			width: auto;
+			
+			});
+		.media(1182px,{
+			width: auto;
+			});
+		}
+		
+	}
+
+.boston{
+		position:relative;
+		z-index:-1;
+		margin-bottom: -45px;
+		margin-left: 200px;
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 10.06944444444444vw;
+		line-height: 170px;
+		color: #E5E5E5;
+		.media(1000px,{
+			margin: 0 auto;
+			});
+		.media(1440px,{
+			margin-bottom: -45px;
+		margin-left: 200px;
+			});
+		.media(2000px,{
+			margin: 0 auto;
+			});
+	}
+}
+/* Секция News */
+.developments{
+	margin-top: 182px;
+	&__h{
+		font-size: 58px;
+		line-height: 70px;
+		color: #000000;
+		margin-bottom: 25px;
+	}
+	&__p{
+		font-family: Futura Bk BT;
+		font-size: 14px;
+		line-height: 17px;
+		color: #000000;
+		margin-bottom: 45px;
+	}
+
+	&-ul{
+	list-style:none;
+	margin-bottom: 76px;
+	}
+	&-li{
+		.col();
+		.size(4);
+
+		&__img{
+			margin-bottom: 23px;
+		}
+		&__time{
+			font-family: Futura Bk BT;
+			font-size: 14px;
+			line-height: 17px;
+			color: #999999;
+			margin-bottom: 10px;
+		}
+		&__h{
+			font-family: Futura Md BT;
+			font-size: 18px;
+			line-height: 22px;
+			color: #000000;
+			margin-bottom: 10px;
+
+		}
+		&__p{
+		font-family: Futura Bk BT;
+		font-size: 16px;
+		line-height: 19px;
+		color: #555555;
+		margin-bottom: 10px;
+		}
+	}
+
+	&__link{
+		text-align:center;
+		margin-bottom: 75px;
+		&_a{
+		 text-decoration:none;
+		 color:black;
+
+		}
+
+	}
+}
+
+
