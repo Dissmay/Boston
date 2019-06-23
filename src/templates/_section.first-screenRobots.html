@@ -18,10 +18,10 @@
 
 </head>
 <body>
-	<section class="first-screen">
+	<section class="first-screen first-screen{{_color}} ">
 		<div class="slogan wrapper">
 			<div class="slogan__img slogan__img{{_color}}">
-				<img src="{{ img }}" alt="robot" class="slogan__img_front">
+				<img src="{{ img }}" alt="robot" class="slogan__img_front slogan__img_front{{classic}} ">
 				<button class="slogan__img_btn">	
 				</button>
 			</div>
@@ -46,7 +46,7 @@
 					<dt class="about-characteristic__dt">
 						<span>Height</span><span class="about-characteristic__dt_solid"></span>
 					</dt>
-					<dd>
+					<dd class="about-characteristic__dd>
 						{{characteristic.height}}
 					</dd>
 			</dl>
@@ -129,7 +129,7 @@
 	</section>
 	
 
-
+<script src="./js/jquery.min.js"  ></script>
 <script src="./js/js.js"></script>
 </body>
 </html>

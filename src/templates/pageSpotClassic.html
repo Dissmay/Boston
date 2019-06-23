@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv='X-UA-Compatible' content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<link rel="shortcut icon" href="favicon.png">
+	<title> Document </title>
+	<link rel="stylesheet" href="./css/styles.css">
+
+	<!-- HTML5 shim and Respond.js-->
+	<!-- [if lt IE 9]>
+		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+	<! [endif]-->	
+
+</head>
+<body>
+{% include '_header.html' %}
+<main>
+{% set img = '../img/svg/SpotСlassic.svg' %}
+{% set H1 = 'Handle' %}
+{% set H2 = 'Good Things Come in Small Packages' %}
+{% set pblock1 = 'Spot Classic takes the lessons learned developing 	BigDog,Cheetah and LS3, and rolls them into a quiet four-legged robot with extraordinary rough terrain mobility and super-human stability. ' %}
+{% set pblock2 = 'Spot Classic is electrically powered and hydraulically 					actuated.
+				Spot Classic carries a 23 kg payload and operates for 45 minutes on a battery charge.' %}
+{% set classic = '-classic' %}
+
+{% set photo = {
+		img1:'../img/HD-01 classic.jpg',
+		img2:'../img/HD-01classic2.jpg',
+		img3:'../img/HD-01 classic3.jpg',
+		img4:'../img/HD-01 classic4.jpg'
+	} 
+%}
+
+{% set characteristic = {
+			name: 'Spot Classic',
+			text:
+			 	'Spot Classic is a four-legged robot designed for indoor and outdoor operation.  It has been the breeding ground for a new approach 
+ 				to dynamic robot control that brings true autonomy within reach.',
+			text2:
+				'Spot Classic is electrically powered and hydraulically actuated.  
+				It senses its rough-terrain environment using LIDAR and stereo vision in conjunction with a suite of on-board sensors to maintain balance and negotiate rough terrain.  It carries a 23 kg payload and operates for 45 minutes on a battery charge.',
+			height:'0.94 m',
+			weight:'75 kg',
+			payload:'45 kg',
+			power:'Battery',
+			acuation:'Hydraulic',
+			perception:'3D Vision system',
+			joints:'12'
+
+		}
+%}
+{% set video = {
+		video1:
+		 '<iframe width="560" height="315" src="https://www.youtube.com/embed/fRj34o4hN4I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
+		video2:
+		 '<iframe width="560" height="315" src="https://www.youtube.com/embed/fRj34o4hN4I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
+		video3:
+		'<iframe width="560" height="315" src="https://www.youtube.com/embed/fRj34o4hN4I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
+}
+ %}
+
+{% set name = 'Spot Classic' %}
+{% set _color = '_blue' %}
+
+{% include '_section.first-screenRobots.html' %}
+</main>
+{% include '_footer.html' %}
+<script src="./js/jquery.min.js"  ></script>
+<script src="./js/js.js"></script>
+</body>
+</html>

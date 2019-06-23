@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv='X-UA-Compatible' content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<link rel="shortcut icon" href="favicon.png">
+	<title> Document </title>
+	<link rel="stylesheet" href="./css/styles.css">
+
+	<!-- HTML5 shim and Respond.js-->
+	<!-- [if lt IE 9]>
+		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+	<! [endif]-->	
+
+</head>
+<body>
+{% include '_header.html' %}
+<main>
+{% set img = '../img/svg/handle.svg' %}
+{% set H1 = 'Handle' %}
+{% set H2 = 'Good Things Come in Small Packages' %}
+{% set pblock1 = 'Handle combines agility and the ability to pick boxes to tackle box handling tasks in the warehouse.' %}
+{% set pblock2 = 'Using an active counterbalancing system, Handle can pick up and move cases weighing over 30lbs. ' %}
+
+{% set photo = {
+		img1:'../img/HD-01 hundle1.jpg',
+		img2:'../img/HD-01 hundle2.jpg',
+		img3:'../img/HD-01hundle3.jpg',
+		img4:'../img/HD-01 hundle4.jpg'
+	} 
+%}
+
+{% set characteristic = {
+			name: 'Hundle',
+			text:
+			 	'Handle is a robot that uses legs and wheels to provide highly agile and small-footprint material handling solutions for logistics. Using 
+				an active counterbalancing system, Handle can pick up and move cases weighing over 30lbs. Its versatile design allows it to tackle pallet building, depalletizing and truck unloading tasks in the warehouse — all in one robot.',
+			text2:
+				'Handles design combines the same dynamics, balance and mobile manipulation characteristics of quadruped or humanoid robots,but in a significantly simplified system. The combination of power and agility make Handle capable of automating difficult manipulation tasks in human-sized environments without the need for installing complicated additional equipment.',
+			height:'2 m',
+			weight:'105 kg',
+			payload:'15 kg',
+			power:'Battery',
+			acuation:'Hydraulic',
+			perception:'Depth Cameras',
+			joints:'10'
+
+		}
+%}
+{% set video = {
+		video1:
+		 '<iframe width="560" height="315" src="https://www.youtube.com/embed/fRj34o4hN4I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
+		video2:
+		 '<iframe width="560" height="315" src="https://www.youtube.com/embed/fRj34o4hN4I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
+		video3:
+		'<iframe width="560" height="315" src="https://www.youtube.com/embed/fRj34o4hN4I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
+}
+ %}
+
+{% set name = 'Hundle' %}
+{% set _color = '_red' %}
+
+{% include '_section.first-screenRobots.html' %}
+</main>
+{% include '_footer.html' %}
+<script src="./js/jquery.min.js"  ></script>
+<script src="./js/js.js"></script>
+</body>
+</html>

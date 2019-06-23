@@ -258,6 +258,21 @@ img{
 				width: 100%;			
 				});
 	}
+	&_orange{
+		&:before{
+		background: rgba(255, 245, 0, 0.85);
+		}
+	}
+	&_red{
+		&:before{
+			background: rgba(237, 22, 35, 0.66);
+		}
+	}
+	&_blue{
+		&:before{
+		background: rgba(36, 55, 226, 0.38);
+		}
+	}
 
 	.slogan{
 		display:flex;
@@ -288,18 +303,12 @@ img{
 				height: 300px;
 				width: 300px;
 				margin: 0;
-				
 				overflow:hidden;
-				
-
 				});
 			
-
 			
-			&_color{ /* ОРАНЬЖЕВЫЙ ЦВЕТ ЕЛИПСА*/
-				background: linear-gradient(125.14deg, #DAA000 3.27%, #FFDD2C 94.7%), #FFD600;
-				
-			}
+			
+			
 			&:before{
 				content:'';
 				position:absolute;
@@ -312,7 +321,6 @@ img{
 				background-repeat:no-repeat;
 				.media(560px, {
 				display:none;
-
 				});
 
 			}
@@ -336,9 +344,53 @@ img{
 				.media(560px, {
 				margin: 0;
 				overflow:hidden;
-
 				});
+				&-classic{
+					position:relative;
+					top: 60px;
+					left: -80px;
+					overflow:hidden;
+					.media(560px, {
+						top: 0;
+						left: -40px;
+				
+					});
+				}
+				
+				
+			
 			}
+			&_orange{ /* ОРАНЬЖЕВЫЙ ЦВЕТ ЕЛИПСА*/
+				background: linear-gradient(125.14deg, #DAA000 3.27%, #FFDD2C 94.7%), #FFD600;
+				&:before{
+					background-image: url('../img/svg/EllipseOrange.svg');
+				};
+				&:after{
+					background-image: url('../img/svg/EllipseOrange2.svg');
+				}
+			}
+			&_red{
+				background: linear-gradient(130.49deg, #FA2E5F 2.44%, #ED1623 93.99%), #53DDFE;
+				&:before{
+					background-image: url('../img/svg/EllipseRed.svg');
+				};
+				&:after{
+					background-image: url('../img/svg/EllipseRed2.svg');
+				}
+
+			}
+			&_blue{
+				background: linear-gradient(130.49deg, #2437E2 2.44%, #038CB7 93.99%), #53DDFE;
+				&:before{
+					background-image: url('../img/svg/EllipseBlue.svg');
+				};
+				&:after{
+					background-image: url('../img/svg/EllipseBlue2.svg');
+				}
+
+			}
+			
+			
 			&_btn{
 				position:absolute;
 				top: 0;
@@ -818,12 +870,19 @@ img{
 
 			&_solid{
 				flex-grow: 1;
- 				border-bottom: 1px solid #000;
+ 				border-bottom: 1px solid #E0E1EA;
   				position: relative;
   				margin-left: 3px;
   				margin-right: 3px;
  				bottom: 4px;
 			}
+		}
+		&__dd{
+			font-family: Futura Md BT;
+			font-size: 16px;
+			line-height: 19px;
+			font-weight: 600;
+				color: #000000;
 		}
 		
 	}
