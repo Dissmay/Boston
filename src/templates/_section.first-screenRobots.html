@@ -21,7 +21,7 @@
 	<section class="first-screen first-screen{{_color}} ">
 		<div class="slogan wrapper">
 			<div class="slogan__img slogan__img{{_color}}">
-				<img src="{{ img }}" alt="robot" class="slogan__img_front slogan__img_front{{classic}} ">
+				<img src="{{ img }}" alt="robot" class="slogan__img_front slogan__img_front{{classic}} slogan__img_front{{ spot }} ">
 				<button class="slogan__img_btn">	
 				</button>
 			</div>
@@ -29,8 +29,8 @@
 		</div>
 	</section>
 	<section class="about wrapper">
-		<h2 class="about__h">
-			About {{characteristic.name}}
+		<h2 class="about__h ">
+			About <span class="about__span{{colorText}}"> {{characteristic.name}}</span>
 		</h2>
 		<div class="row">
 		<div class="about__text">

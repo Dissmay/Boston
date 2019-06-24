@@ -358,6 +358,17 @@ img{
 				
 					});
 				}
+				&-spot{
+					position:relative;
+					left: -90px;
+					top: 40px;
+					min-width: 800px;
+					.media(560px,{
+						min-width:500px;
+						top: 0;
+						left: -70px;
+						});
+				}
 				
 				
 			
@@ -598,7 +609,10 @@ img{
 		.size(3);
 		.size-sm(6);
 
-
+	}
+	.our-robots__a{
+		text-decoration:none;
+		color:black;
 	}
 	&__img{
 		width: auto;
@@ -826,12 +840,29 @@ img{
 /* Секция About с 2 по 4 стр */
 .about{
 	margin-bottom: 207px;
+	&__span{
+		&_atlas{
+			color:cyan;
+		
+		};
+		&_spot{
+			color:yellow;
+		};
+		&_handle{
+			color:red;
+		}
+		&_spotClassic{
+			color:blue;
+		}
+
+	}
 	&__h{
 		font-family: Futura Md BT;
 		font-size: 58px;
 		line-height: 70px;
 		color: #000000;
 		margin-bottom: 44px;
+		
 	}
 	&__text{
 		.col();
