@@ -1114,6 +1114,10 @@ img{
 	&-li{
 		.col();
 		.size(4);
+		.size-xs(6);
+		.media(500px, {
+			.size(12);
+			});
 
 		&__img{
 			margin-bottom: 23px;
@@ -1153,5 +1157,187 @@ img{
 
 	}
 }
+
+/* секция Some */
+.some{
+	margin-top: 182px;
+	display:flex;
+	align-items:center;
+	.media(850px,{
+			flex-wrap:wrap;
+			});
+	
+	
+
+	&__article{
+		.size(6);
+		.media(850px,{
+			.size(12);
+			});
+		&_h{
+		font-family: Futura Md BT;
+		font-size: 58px;
+		line-height: 70px;
+		color: #000000;
+		margin-bottom: 82px;
+		.media(850px,{
+			margin-bottom: 30px;
+			
+			});
+		.media(490px,{
+			
+			font-size: 40px;
+			});
+		.media(350px,{
+			
+			font-size: 28px;
+			});
+
+
+	}
+		&_p{
+
+			margin-bottom: 73px;
+			font-family: Futura Bk BT;
+			font-size: 16px;
+			line-height: 19px;
+
+			color: #000000;
+			
+
+		}
+		&_data{
+			margin-bottom: 107px;
+				.media(850px,{
+				margin-bottom: 30px;
+				});
+		}
+
+
+	}
+	&__img{
+		.size(6);
+		.shift-left(0.6);
+		.media(850px,{
+			.size(12);
+			.shift-left(0);
+			});
+	}
+}
+
+/* Секция Contact */
+.contact{
+	margin-top: 182px;
+	&-h{
+	font-family: Futura Md BT;
+	font-size: 58px;
+	line-height: 70px;
+	color: #000000;
+	margin-bottom: 14px;
+	
+	}
+
+	&-p{
+	font-family: Futura Bk BT;
+	font-size: 16px;
+	line-height: 19px;
+	color: #555555;
+	margin-bottom: 48px;
+	}
+
+
+		&-form{
+			display:flex;
+			flex-wrap: wrap;
+			fieldset{
+				border:none;
+			}
+			
+
+			&__input{
+				&::placeholder{
+					color:black;
+					font-size: 16px;
+					line-height: 19px;
+
+				}
+				.col();
+				.size(6);
+				font-family: Futura Bk BT;
+				font-size: 16px;
+				line-height: 19px;
+				color: #000000;
+				margin-bottom: 20px;
+				border:none;
+				border-bottom:  1px solid #BBBBBB;
+				padding: 15px 0;
+			
+			&_massage{
+				.col();
+				.shift-left(0.4);
+				.size(6);
+						.media(768px,{
+						.size(12);
+						height: 90px;
+						.shift-left(0);
+						});
+					&::placeholder{
+					color:black;
+					font-size: 16px;
+					line-height: 19px;
+
+				}
+				
+			}
+
+			}
+
+			&__about{
+			.size(3);
+			
+			.media(768px,{
+				.size(6);
+				});
+			.media(450px,{
+				.size(12);
+				margin-bottom: 20px;
+				});
+
+
+
+
+				&_legend{
+					margin-bottom: 15px;
+					font-family: Futura Bk BT;
+				font-size: 16px;
+				line-height: 19px;
+				color: #000000;
+				}	
+
+				&_p{
+					margin-bottom: 5px;
+				}
+			}
+			
+			&__button{
+				margin-top: 50px;
+				width: 187px;
+				height: 58px;
+				color:white;
+				background-color: #000000;
+				line-height:58px;
+				border:none;
+				font-size: 18px;
+				font-family: Futura Bk BT;
+				margin-bottom: 108px;
+				.media(430px,{
+				width: 100%;
+
+				});
+			}
+
+		}
+}
+
 
 

@@ -62,38 +62,59 @@
         <script src="./js/js.js"></script>
       </body>
     </html>
-    <section class="jobs wrapper">
-      <h2 class="jobs__h2"> Jobs </h2>
-      <div class="row">
-        <div class="jobs-listings">
-          <h3 class="jobs-listings__h"> Job Listings </h3>
-          <ul class="jobs-listings__ul">
-            <li class="jobs-listings__li">
-              <h4 class="jobs-listings__li_h"> Software Engineer - Front End Web Developer </h4>
-              <p class="jobs-listings__li_p"> Location: Menlo Park, CA </p>
-            </li>
-            <li class="jobs-listings__li">
-              <h4 class="jobs-listings__li_h"> Human Resources Coordinator </h4>
-              <p class="jobs-listings__li_p"> Location: Waltham, MA </p>
-            </li>
-            <li class="jobs-listings__li">
-              <h4 class="jobs-listings__li_h"> Senior Accountant/Financial Analyst </h4>
-              <p class="jobs-listings__li_p"> Location: Menlo Park, CA </p>
-            </li>
-            <li class="jobs-listings__li">
-              <h4 class="jobs-listings__li_h"> Vertical Product Manager for Spot Robot - Energy & Construction Industry </h4>
-              <p class="jobs-listings__li_p"> Location: Waltham, MA </p>
-            </li>
-          </ul>
-        </div>
-        <div class="jobs-hiring">
-          <h3 class="jobs-hiring__h"> Boston Dynamics is Hiring </h3>
-          <p class="jobs-hiring__p"> Boston Dynamics is a leading developer of advanced dynamic robots, including Spot, Atlas, Handle, and others. We love to create innovative machines that combine advanced control systems, software, sophisticated mechanical designs, onboard sensing and perception, and extraordinary behavior. </p>
-          <p class="jobs-hiring__p"> We have a close-knit, hard-working team of engineers, scientists, technicians and other business professionals devoted to building and delivering the most advanced dynamic robots in the world. If you aspire to excellence, like to get your hands dirty and want to join our team of robotics rock stars, please submit your resume here. </p>
-          <p class="jobs-hiring__p"> We have a friendly and supportive work environment where we encourage work-life balance, personal health, and ambitious goals. Boston Dynamics provides Equal Employment Opportunities without regard to the applicant's race, color, religion, gender, gender identity, sexual orientation or age. </p>
-        </div>
-      </div>
-      <h1 class="boston"> BostonDynamics </h1>
+    <section class="contact wrapper">
+      <h2 class="contact-h"> Contact Us </h2>
+      <p class="contact-p"> Get In Touch With Us </p>
+      <form action="#" class="contact-form row">
+        <input type="text" class="contact-form__input" placeholder="First name*" required>
+        <input type="text" class="contact-form__input" placeholder="Last name*" required>
+        <input type="text" class="contact-form__input" placeholder="Company name" required>
+        <input type="text" class="contact-form__input" placeholder="Email*" required>
+        <fieldset class="contact-form__about">
+          <legend class="contact-form__about_legend"> What are you contacting us about?* </legend>
+          <p class="contact-form__about_p">
+            <label>
+              <input type="radio" name="contact"> Media inquiry </label>
+          </p>
+          <p class="contact-form__about_p">
+            <label>
+              <input type="radio" name="contact"> Researsh propasal </label>
+          </p>
+          <p class="contact-form__about_p">
+            <label>
+              <input type="radio" name="contact"> Speaking or conference inviation </label>
+          </p>
+          <p class="contact-form__about_p">
+            <label>
+              <input type="radio" name="contact"> Sales </label>
+          </p>
+          <p>
+            <label>
+              <input type="radio" name="contact"> Technology development </label>
+          </p>
+        </fieldset>
+        <fieldset class="contact-form__about">
+          <legend class="contact-form__about_legend"> Are you inquiring about a specific robot? </legend>
+          <p class="contact-form__about_p">
+            <label>
+              <input type="radio" name="robot"> Atlas </label>
+          </p>
+          <p class="contact-form__about_p">
+            <label>
+              <input type="radio" name="robot"> Handle </label>
+          </p>
+          <p class="contact-form__about_p">
+            <label>
+              <input type="radio" name="robot"> Pick </label>
+          </p>
+          <p class="contact-form__about_p">
+            <label>
+              <input type="radio" name="robot"> Spot </label>
+          </p>
+        </fieldset>
+        <textarea type="text" class="contact-form__input_massage" placeholder="Massage*"></textarea>
+        <button class="contact-form__button" type="submit"> send </button>
+      </form>
     </section>
     <!DOCTYPE html>
     <html lang="ru">

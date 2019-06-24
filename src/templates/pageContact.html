@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv='X-UA-Compatible' content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<link rel="shortcut icon" href="favicon.png">
+	<title> Document </title>
+	<link rel="stylesheet" href="./css/styles.css">
+
+	<!-- HTML5 shim and Respond.js-->
+	<!-- [if lt IE 9]>
+		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+	<! [endif]-->	
+
+</head>
+<body>
+{% include '_header.html' %}
+
+<section class="contact wrapper">
+	<h2 class="contact-h">
+		Contact Us
+	</h2>
+	<p class="contact-p">
+		Get In Touch With Us
+	</p>
+	<form action="#" class="contact-form row">
+		<input type="text" class="contact-form__input" placeholder="First name*"  required>
+		<input type="text" class="contact-form__input" placeholder="Last name*"  required>
+		<input type="text" class="contact-form__input" placeholder="Company name"  required>
+		<input type="text" class="contact-form__input" placeholder="Email*"  required>
+
+	
+		<fieldset class="contact-form__about">
+			<legend class="contact-form__about_legend">
+				What are you contacting us about?*
+			</legend>
+				<p class="contact-form__about_p">
+					<label>
+					<input type="radio" name="contact">
+					Media inquiry
+					</label>
+				</p>
+				<p class="contact-form__about_p">
+					<label>
+					<input type="radio" name="contact">
+					Researsh propasal
+					</label>
+				</p>
+				<p class="contact-form__about_p">
+					<label>
+					<input type="radio" name="contact">
+					Speaking or conference inviation
+					</label>
+				</p>
+				<p class="contact-form__about_p">
+					<label>
+					<input type="radio" name="contact">
+					Sales
+					</label>
+				</p>
+				<p>
+					<label>
+					<input type="radio" name="contact">
+					Technology development
+					</label>
+				</p>	
+		</fieldset>
+
+		<fieldset class="contact-form__about">
+			<legend class="contact-form__about_legend">
+			Are you inquiring about a specific robot?
+			</legend>
+				<p class="contact-form__about_p">
+					<label>
+					<input type="radio" name="robot">
+					Atlas
+					</label>
+				</p>
+				<p class="contact-form__about_p">
+					<label>
+					<input type="radio" name="robot">
+					Handle
+					</label>
+				</p>
+				<p class="contact-form__about_p">
+					<label>
+					<input type="radio" name="robot">
+					Pick
+					</label>
+				</p>
+				<p class="contact-form__about_p">
+					<label>
+					<input type="radio" name="robot">
+					Spot
+					</label>
+				</p>
+		</fieldset>
+		<textarea type="text" class="contact-form__input_massage" placeholder="Massage*"></textarea>
+
+		<button class="contact-form__button" type="submit">
+			send
+		</button>
+	</form>
+	
+</section>
+
+
+
+
+{% include '_footer.html' %}
+<script src="./js/jquery.min.js" ></script>
+<script src="./js/js.js"></script>
+</body>
+</html>
